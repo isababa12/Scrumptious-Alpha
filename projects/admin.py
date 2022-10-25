@@ -6,4 +6,5 @@ from .models import Project
 class RecipeAdmin(admin.ModelAdmin):
     list_display = (
         "name",
+        "id",
     )

@@ -20,8 +20,8 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>{{ project.name }}</td>
-                    <td></td>
+                    <td><a href="{% url 'show_project' project.id %}">{{project.name}}</a></td>
+                    <td>{{ project.tasks.all|length }}</td>
         </table>
         {% empty %}
         <p>You are not assigned to any projects</p>
