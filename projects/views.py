@@ -35,5 +35,5 @@ def create_project(request):
         form = ProjectForm()
     context = {
         "form": form,
-        }
+    }
     return render(request, "projects/create.html", context)
